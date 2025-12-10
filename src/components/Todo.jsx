@@ -28,7 +28,7 @@ const Todo = () => {
                 What do you want to accomplish today?
             </h2>
             <input 
-            className="w-full p-4 mb-8 px-6 bg-stone-500 rounded-full border-none mt-8 text-white" 
+            className="w-full p-4 mb-8 px-6 ring bg-stone-500 rounded-full border-none mt-8 text-white" 
             type="text" 
             placeholder="Add a new task..."
             value={inputValue}

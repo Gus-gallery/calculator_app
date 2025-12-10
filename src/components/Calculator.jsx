@@ -33,23 +33,23 @@ const Calculator = () => {
         Welcome to the Calculator App!
       </h1>
   
-      <div className="md:w-2/3 w-full calculator m-4 p-4 border border-stone-900 flex flex-col rounded-lg shadow-lg bg-stone-200"> 
+      <div className="md:w-2/3 w-full calculator m-4 p-4 border border-stone-900 flex flex-col rounded-lg shadow-lg bg-stone-600"> 
         {/* Calculator UI will go here */}
-        <div id="display" className="bg-white text-right p-4 rounded-lg text-2xl font-mono">
+        <div id="display" className="bg-stone-400 text-right p-4 rounded-lg text-2xl font-mono">
           {display}
         </div>
         <div id="buttons" className="grid grid-cols-5 gap-4 mt-4 cursor-pointer">
           <button onClick={() => handleClick("7")} className="bg-stone-800 text-white p-4 rounded-lg">7</button>
           <button onClick={() => handleClick("8")} className="bg-stone-800 text-white p-4 rounded-lg">8</button>
           <button onClick={() => handleClick("9")} className="bg-stone-800 text-white p-4 rounded-lg">9</button>
-          <button onClick={() => handleClick("/")} className="bg-orange-500 text-white p-4 rounded-lg">/</button>
-          <button onClick={() => handleClick("*")} className="bg-orange-500 text-white p-4 rounded-lg">*</button>
+          <button onClick={() => handleClick("/")} className="bg-orange-700 text-white p-4 rounded-lg">/</button>
+          <button onClick={() => handleClick("*")} className="bg-orange-700 text-white p-4 rounded-lg">*</button>
   
           <button onClick={() => handleClick("4")} className="bg-stone-800 text-white p-4 rounded-lg">4</button>
           <button onClick={() => handleClick("5")} className="bg-stone-800 text-white p-4 rounded-lg">5</button>
           <button onClick={() => handleClick("6")} className="bg-stone-800 text-white p-4 rounded-lg">6</button>
-          <button onClick={() => handleClick("-")} className="bg-orange-500 text-white p-4 rounded-lg">-</button>
-          <button onClick={() => handleClick("+")} className="bg-orange-500 text-white p-4 rounded-lg">+</button>
+          <button onClick={() => handleClick("-")} className="bg-orange-700 text-white p-4 rounded-lg">-</button>
+          <button onClick={() => handleClick("+")} className="bg-orange-700 text-white p-4 rounded-lg">+</button>
   
           <button onClick={() => handleClick("1")} className="bg-stone-800 text-white p-4 rounded-lg">1</button>
           <button onClick={() => handleClick("2")} className="bg-stone-800 text-white p-4 rounded-lg">2</button>
