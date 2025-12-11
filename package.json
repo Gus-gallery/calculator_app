@@ -1,5 +1,6 @@
 {
   "name": "calculator_app",
+  "homepage": "https://gus-gallery.github.io/calculator_app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
