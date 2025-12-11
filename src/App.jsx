@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Calculator from './components/Calculator';
 import Nav from './components/Nav';
 import Todo from './components/Todo';
+import Notes from './components/Notes';
 
 function App() {
   const [activeProject, setActiveProject] = useState(null);
@@ -15,7 +16,7 @@ function App() {
       case "To-Do List":
         return <Todo />;
       case "Notes App":
-        return <div className="text-center mt-20 text-white opacity-50">Notes App project coming soon!</div>;
+        return <Notes />;
       default:
         return <div className="text-center mt-20 text-white opacity-50">Select a project from the navigation bar.</div>;
     }
