@@ -63,13 +63,13 @@ const Notes = () => {
                         onDragStart={(e) => handleDragStart(e, index)}
                         onDragOver={handleDragOver}
                         onDrop={(e) => handleDrop(e, index)}
-                        className="bg-stone-700 text-white px-4 rounded-lg flex flex-col justify-between items-center cursor-move"
+                        className="bg-yellow-200 text-stone-900 px-4 rounded-lg flex flex-col justify-between items-center cursor-move"
                     >
-                        <div className="w-full rounded-full mb-2 bg-stone-400 h-1"/>
-                        <div className="mb-2 flex-row flex justify-between w-full">
+                        <div className="w-full rounded-full mb-2 bg-yellow-600 h-1"/>
+                        <div className="mb-2 h-30 flex-row flex justify-between w-full">
                             {note}
                             <button 
-                                className="bg-stone-400 rounded-full w-6 h-6 ml-4 flex justify-center text-stone-800 font-bold hover:bg-stone-50"
+                                className="bg-yellow-400 rounded-full w-6 h-6 ml-4 flex justify-center text-stone-800 font-bold hover:bg-yellow-300"
                                 onClick={() => handleDeleteNote(index)}
                             >
                                 x
