@@ -3,6 +3,7 @@ import Calculator from './components/Calculator';
 import Nav from './components/Nav';
 import Todo from './components/Todo';
 import Notes from './components/Notes';
+import Gulle from './components/Gulle';
 
 function App() {
   const [activeProject, setActiveProject] = useState(null);
@@ -10,7 +11,7 @@ function App() {
   function renderProject() {
     switch (activeProject) {
       case 'Gulle':
-        return <div className="text-center mt-20 text-white opacity-50">Gulle project coming soon!</div>;
+        return <Gulle />;
       case 'Calculator':
         return <Calculator />;
       case "To-Do List":
