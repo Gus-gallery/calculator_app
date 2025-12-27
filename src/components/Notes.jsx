@@ -5,6 +5,20 @@ const Notes = () => {
     const [inputValue, setInputValue] = useState("");
     const [notes, setNotes] = useState([]);
 
+    const randomColors = [
+        "bg-yellow-200",
+        "bg-green-200",
+        "bg-blue-200",
+        "bg-pink-200",
+        "bg-purple-200",
+        "bg-orange-200"
+    ]
+
+    const getRandomColor = () => {
+        const randomIndex = Math.floor(Math.random() * randomColors.length);
+        return randomColors[randomIndex];
+    }
+
     function handleKeyPress(e) {
         if (e.key === 'Enter' && inputValue.trim() !== "") {
             setNotes([...notes, inputValue.trim()]);
@@ -63,7 +77,7 @@ const Notes = () => {
                         onDragStart={(e) => handleDragStart(e, index)}
                         onDragOver={handleDragOver}
                         onDrop={(e) => handleDrop(e, index)}
-                        className="bg-yellow-200 text-stone-900 px-4 rounded-lg flex flex-col justify-between items-center cursor-move"
+                        className={`${getRandomColor()} text-stone-900 px-4 rounded-lg flex flex-col justify-between items-center cursor-move`}
                     >
                         <div className="w-full rounded-full mb-2 bg-yellow-600 h-1"/>
                         <div className="mb-2 h-30 flex-row flex justify-between w-full">
