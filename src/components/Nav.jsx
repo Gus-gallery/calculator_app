@@ -4,7 +4,8 @@ import { useState } from 'react'
 const projects = [
     "Calculator",
     "To-Do List",
-    "Notes App"
+    "Notes App",
+    "Weather Thing"
 ]
 
 const Nav = ({ onSelectProject }) => {
