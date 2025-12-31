@@ -83,7 +83,7 @@ const Notes = () => {
                         <div className="mb-2 h-30 flex-row flex justify-between w-full">
                             {note}
                             <button 
-                                className="bg-yellow-400 rounded-full w-6 h-6 ml-4 flex justify-center text-stone-800 font-bold hover:bg-yellow-300"
+                                className="bg-stone-400 rounded-full w-6 h-6 ml-4 flex justify-center text-stone-900 font-bold hover:bg-stone-300"
                                 onClick={() => handleDeleteNote(index)}
                             >
                                 x
